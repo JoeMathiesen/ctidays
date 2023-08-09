@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.cti-days-body {
+  background-color:#0D3B66;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-header {
+  text-align:center;
+  width:100%;
+  padding: 2% 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-header h1 {
+  font-size: 4rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color:#FFBA49;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.birthday-card {
+  background-color:#0D3B66;
+  width:80%;
+  margin-left:10%;
+  height:100%;
+  border: 5px solid #00A9A5;
+  border-top-left-radius: 10px;
+  position:relative;
+}
+.birthday-card:before{
+  content: '';
+  position:absolute;
+  top:0;
+  right:0;
+  border-top:110px solid #FFBA49;
+  border-left:130px solid #0D3B66;
+  width:0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.birthday-card-content {
+  margin-left:5%;
+  font-size: 2em;
+  padding: .5em 0 .3em 0;
 }
 
-.App-link {
-  color: #61dafb;
+.birthday-card-content h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.birthday-card-content h4 {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#fff;
+  margin-left:10%;
+  font-size:75%
+}
+
+.card-list {
+  width: 100%;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:5px;
+  padding-bottom: .5%;
 }
